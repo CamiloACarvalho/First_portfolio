@@ -27,7 +27,145 @@ body
 .cabecalho /*USANDO AS CLASSES CRIADAS NO HTML PARA ORGANIZAR O LAYOUT DA PÁGINA*/
 {
 
+    /*PRA VOCÊ USAR O FLEXBOX VOCÊ SEMPRE UTILIZA UMA PROPRIEDADE CHAMADA display:flex*/
+    display: flex; /*VOCÊ TERÁ QUE ENTRAR NO SITE DO FLEXBOX PARA PODER SE ORIENTAR EM RELAÇÃO AO POSICIONAMENTO DOS ÍCONES DENTRO DA PÁGINA. O SITE É: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
     
+    flex-direction: row; /*OS ÍCONES FICARÃO POSICIONADOS NA HORIZONTAL, TIPO LINHA*/
+    
+    flex-wrap: wrap; /*NO CASO DE NÃO COUBER NA TELA TODA, OS LINKS DAS MINHAS PÁGINAS VOU PRA BAIXO DA MINHA FOTO*/
+    
+    align-items: center; /*ALINHANDO OS ÍTENS NO CENTRO DA PAGINA*/
+    
+    justify-content: space-around; /*VAI ALINHAS OS ÍTENS DAS EXTREMIDADES, NO CASO DA MINHA PÁGINA, É A MINHA FOTO COM O LINK DO DO YOUTUBE */
+    
+    padding: 25px; /*DISTÊNCIA DO TOPO DA PÁGINA ATÉ OS PRIMEIRO ÍCONES*/
+}
+
+.cabecalho-imagem /*DEFININDO O TAMANHO DA MINHA FOTO NA PÁGINA*/
+{
+    height: 150px;
+}
+
+.cabecalho-menu
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/
+
+    gap: 16px; /*DISTÂNCIA ENTRE OS ÍCONES*/
+}
+
+.conteudo /*AGORA VAMOS PARTIR PARA A CLASSE PRINCIPAL*/
+{
+    margin-bottom: 48px; /*DISTÂNCIA DO FIM DO CONTEÚDO PRINCIPAL PARA RODAPÉ (FOOTER)*/
+
+    border-top: 0.7px solid #02011c; /*BORDA DO TOPO E AI DEFINI QUE A BORDA SERÁ DE 0.5 PIXEL, BORDA SÓLIDA E AQUELE CÓDIGO DA COR EM HEXADECIMAL. SITE: https://cssgradient.io/*/
 
 }
 
+.conteudo-principal
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/  
+    
+    flex-direction: row;
+
+    align-items: center; /*ALINHANDO OS ÍTENS NO CENTRO DA PAGINA*/
+
+    justify-content: space-evenly; /*NO SITE DO FLEX BOX EXPLICA MELHOR COMO FICA A VIZUALIZAÇÃO*/
+
+}
+
+.conteudo-principal-escrito
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/  
+    
+    flex-direction: column; /*VAI FICAR EM FORMA DE COLUNA, OU SEJA, UM EMBAIXO DO OUTRO*/
+
+    gap: 32px;    /*DISTÂNCIA DO TÍTULO E DO SUBTÍTULO*/
+}
+
+.conteudo-principal-escrito-titulo
+{
+    
+    font-family: 'Quicksand', sans-serif; /*FONTE RETIRADA DO SITE: https://fonts.google.com/?sort=popularity . AQUI É O ESTILO DA FONTE*/
+    
+    font-weight: 400; /*AQUI DIGAMOS QUE É O PESO DA FONTE. QUANTO MAIOR, MAIS ESPESSA FICA A FONT*/
+
+    font-size: 64px; /*TAMANHO DA FONTE*/
+
+    color: #dfdff4; /*NO MESMO SITE QUE TO PEGANDO AS CORES TUDO HAHAH*/
+}
+
+.conteudo-principal-escrito-subtitulo
+{
+    font-family: 'Dancing Script', cursive;
+
+    font-weight: 400;
+
+    font-size: 24px;
+
+    color: #dfdff4;
+}
+
+.conteudo-principal-imagem
+{
+    height: 375px; /*TAMANHO DA IMAGEM, NO CASO, MEU AVATAR*/
+}
+
+.conteudo-secundario
+{
+    display: flex; /*UTILIZANDO O FORMATO FLEX BOX*/
+
+    flex-direction: column; /*ALINHANDO NO FORMATO COLUNA*/
+
+    align-items: center;
+    
+    align-content: space-around
+    
+    gap 24px;
+
+    margin-top: 45px; /*DISTANCIA DO AVATAR ATÉ O TEXTO*/
+}
+
+.conteudo-secundario-titulo
+{
+    border-top: 0.7px solid #02011c; /*BORDA DO TOPO E AI DEFINI QUE A BORDA SERÁ DE 0.5 PIXEL, BORDA SÓLIDA E AQUELE CÓDIGO DA COR EM HEXADECIMAL. SITE: https://cssgradient.io/*/
+
+    padding-top: 48px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-weight: 400;
+
+    font-size: 24px;
+
+    color: #02011c;
+
+    margin-bottom: 20px; /*DISTÂNCIA DO TÍTULO (REUSMO PROFISSIONAL) PARA O TEXTO ABAIXO*/
+}
+
+.conteudo-secundario-paragrafo
+{
+    font-family: 'Quicksand', sans-serif;
+
+    font-weight: 500;
+
+    font-size: 18px;
+
+    color: #02011c;
+}
+
+.rodape
+{
+    padding-top: 32px;
+
+    border-top: 0.7px solid #02011c; /*BORDA DO TOPO E AI DEFINI QUE A BORDA SERÁ DE 0.5 PIXEL, BORDA SÓLIDA E AQUELE CÓDIGO DA COR EM HEXADECIMAL. SITE: https://cssgradient.io/*/
+}
+
+.rodape-gif
+{
+    height: auto;
+    
+    display: block; /*OUTRA FORMA DE ALINHAR UM ÚNICO OBJETO AO CENTRO*/
+
+    margin: 0 auto; /*OUTRA FORMA DE ALINHAR UM ÚNICO OBJETO AO CENTRO*/
+
+}
