@@ -1,0 +1,33 @@
+/*ESSA FONTE DE TEXTO FOI RETIRADA DO SITE: https://fonts.google.com/?sort=popularity */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*PARA LIMPAR TODO E QUALQUER CONFIGURAÇÃO VINDA DO CÓDIGO HTML, FAREMOS O SEGUINTE:*/
+
+*{
+    margin: 0; /*É A DISTÂNCIA DA TAG ATÉ O EXTERIOR*/
+    padding: 0; /*É A DISTÂNCIA DA TAG ATÉ O CONTEÚDO DELA*/
+    box-sizing: border-box;
+    text-decoration: none; /*REMOVE QUALQUER DECORAÇÃO QUE TEM NO TEXTO*/
+}
+
+body
+{
+    font-size: 100%;
+
+     /* ESSE FUNDO GRADIENTE EU RETIREI DO SITE: https://cssgradient.io/ */
+     background: rgb(2,1,28);
+     background: -moz-linear-gradient(90deg, rgba(2,1,28,1) 0%, rgba(7,109,249,1) 0%, rgba(255,247,75,0.9671218829328606) 100%);
+     background: -webkit-linear-gradient(90deg, rgba(2,1,28,1) 0%, rgba(7,109,249,1) 0%, rgba(255,247,75,0.9671218829328606) 100%);
+     background: linear-gradient(90deg, rgba(2,1,28,1) 0%, rgba(7,109,249,1) 0%, rgba(255,247,75,0.9671218829328606) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02011c",endColorstr="#fff74b",GradientType=1);
+
+}
+
+.cabecalho /*USANDO AS CLASSES CRIADAS NO HTML PARA ORGANIZAR O LAYOUT DA PÁGINA*/
+{
+
+    
+
+}
+
